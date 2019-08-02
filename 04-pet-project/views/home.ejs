@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chat socket</title>
+</head>
+<body>
+    <h1>Chatroom</h1>
+    <form  id="form">
+        <input type="text" name="chat-input">
+        <button id="button-submit">Submit</button>
+    </form>
+
+    <!-- code js socket -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        var socket = io();
+    </script>
+    <script src="chat.js"></script>
+</body>
+</html>
