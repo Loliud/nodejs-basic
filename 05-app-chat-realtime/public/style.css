@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right top, #7ac4ad, #5ec3c4, #52c0db, #66b9eb, #8daff0);
+} 
+#create-user{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 50vh;
+    width: 50%;
+}
+#create-user h1{
+    margin-bottom: 20px;
+}
+#create-user input, button{
+    font-size: 40px;
+    outline: none;
+    width: 50%;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+#create-user button{
+    width: 30%;
+    padding: 20px 0px;
+    border-radius: 50px;
+    border: none;
+    background-color: tomato;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#create-user button:hover{
+    background-color: #6f1d0e;
+}
+
+
+#content{
+    
+    margin: auto;
+    width: 80%;
+    display: none;
+}
+
+#content  #user-online{
+    height: 50vh;
+    width: 30%;
+}
+#content #form-chat{
+    height: 50vh;
+    width: 70%;
+
+}
+#user-online {
+    border: 2px solid #DDD;
+    text-align: center;
+}
+#user-online  div{
+    font-size: 20px;
+    padding: 10px;
+    border-top: 2px solid #DDD; 
+    color: white;   
+}
+#user-online h1{
+    position: relative;
+    font-weight: bold;
+    color: #DDD;
+}
+#user-online h1::before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(0px, -50%);
+}
+
+#form-chat{
+    position: relative;;
+    border: 2px solid #DDD;
+}
+#form-chat #message{
+    position: absolute;
+    bottom: 0%;
+    font-size: 30px;
+    width: 80%;
+}
+#form-chat button{
+    position: absolute;
+    font-size: 30px;
+    bottom: 0%;
+    right: 0;
+    margin: 0;
+    width: 20%;
+}
