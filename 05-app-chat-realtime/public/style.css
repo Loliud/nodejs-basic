@@ -67,11 +67,15 @@ body{
     border: 2px solid #DDD;
     text-align: center;
 }
-#user-online  div{
+#user-online div{
     font-size: 20px;
-    padding: 10px;
+    padding: 0px !important;
+    margin: 0px !important;
     border-top: 2px solid #DDD; 
-    color: white;   
+    border-bottom: none;
+    color: #07658c;   
+    font-weight: bold;
+
 }
 #user-online h1{
     position: relative;
@@ -91,6 +95,7 @@ body{
 }
 
 #form-chat{
+    background-color: white;
     position: relative;;
     border: 2px solid #DDD;
 }
